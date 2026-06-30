@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoWorld | Premium Car Dealership</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    try {
+      if (sessionStorage.getItem('autoworldIntroShown') === 'yes') {
+        document.documentElement.classList.add('skip-intro-loader');
+      }
+    } catch(e) {}
+  </script>
+</head>
+<body class="intro-playing">
+  <div class="logo-reveal-loader" id="logoReveal" aria-label="AutoWorld loading intro">
+    <video class="logo-reveal-video" autoplay muted playsinline preload="auto" id="introRevealVideo">
+      <source src="assets/logo-reveal.mp4" type="video/mp4" />
+    </video>
+    <div class="intro-loader-overlay"></div>
+    <div class="intro-loader-card">
+      <img src="assets/logo.png" alt="AutoWorld logo">
+      <strong><span>Auto</span>World</strong>
+      <small>DRIVE THE FUTURE</small>
+      <div class="intro-progress"><i></i></div>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div><span>📍 101, Business Bay, Karachi</span><span>☎ <a href="tel:+922112345678">+92 21 1234 5678</a></span><span>✉ <a href="mailto:info@autoworld.com">info@autoworld.com</a></span></div>
+      <div><span>Mon - Sat: 9:00 AM - 8:00 PM</span><div class="social-menu" aria-label="AutoWorld social links">
+  <a class="social-mini" href="https://www.facebook.com/autoworld" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"></a>
+  <a class="social-mini" href="https://www.instagram.com/autoworld" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+  <a class="social-mini" href="https://www.youtube.com/@autoworld" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="assets/icon-youtube.svg" alt="YouTube"></a>
+  <a class="social-mini" href="https://www.linkedin.com/company/autoworld" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"></a>
+  <a class="social-mini whatsapp" href="https://wa.me/922112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt="WhatsApp"></a>
+</div></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand brand-with-text" href="index.html" aria-label="AutoWorld Home">
+        <span class="brand-mark"><img src="assets/logo.png" alt="AutoWorld logo" /></span>
+        <span class="brand-copy"><strong><span>Auto</span><em>World</em></strong><small>DRIVE THE FUTURE</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks"><a class="active" href="index.html">Home</a><a href="see-your-car.html">See Your Car</a><a href="dealers.html">Dealers</a><a href="compare.html">Compare</a><a href="finance.html">Finance</a><a href="warranty.html">Warranty</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="book-me.html">Book Me</a></nav>
+      <div class="nav-actions">
+        <a class="btn btn-red" href="book-me.html">Book a Test Drive</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+<section class="page-related-strip strip-home" aria-label="Home Highlights">
+  <div class="page-related-fade left"></div>
+  <div class="page-related-inner">
+    <div class="page-related-line">
+          <span><strong>Certified Stock</strong> verified showroom cars</span>
+          <span><strong>Live Availability</strong> updated vehicle listings</span>
+          <span><strong>Price Guidance</strong> clear market-friendly deals</span>
+          <span><strong>Finance Pre-Check</strong> quick estimated support</span>
+          <span><strong>Dealer Network</strong> trusted city showrooms</span>
+          <span><strong>Test Drive Slot</strong> simple booking process</span>
+          <span><strong>Certified Stock</strong> verified showroom cars</span>
+          <span><strong>Live Availability</strong> updated vehicle listings</span>
+          <span><strong>Price Guidance</strong> clear market-friendly deals</span>
+          <span><strong>Finance Pre-Check</strong> quick estimated support</span>
+          <span><strong>Dealer Network</strong> trusted city showrooms</span>
+          <span><strong>Test Drive Slot</strong> simple booking process</span>
+    </div>
+  </div>
+  <div class="page-related-fade right"></div>
+</section>
+
+
+
+
+  <main>
+    <section class="hero hero-video-section">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-shade"></div>
+      <div class="container hero-content direct-hero-text">
+        <span class="eyebrow">Welcome to AutoWorld</span>
+        <h1>Find the Perfect Car for <span>Your World</span></h1>
+        <p>Explore real cars, compare models, find trusted dealers, check finance options and book your test drive from one modern platform designed to make car discovery simple, smooth and professional.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-red" href="see-your-car.html">Explore Cars →</a>
+          <a class="btn btn-white" href="compare.html">Compare Cars ⚖</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-floating">
+      <div class="container trust-strip enhanced-card">
+        <div class="trust-item"><span>🛡</span><div><strong>Trusted Dealers</strong><small>Verified network</small></div></div>
+        <div class="trust-item"><span>🏷</span><div><strong>Best Prices</strong><small>Market friendly deals</small></div></div>
+        <div class="trust-item"><span>🎧</span><div><strong>Quick Support</strong><small>Helpful guidance</small></div></div>
+        <div class="trust-item"><span>✓</span><div><strong>Secure Service</strong><small>Safe buying journey</small></div></div>
+      </div>
+    </section>
+
+    <section class="search-panel">
+      <div class="container">
+        <form class="search-box enhanced-card" data-home-search>
+          <div class="input-card"><span>🚘</span><label>Brand<select name="brand"><option value="">All Brands</option><option>Toyota</option><option>Honda</option><option>Suzuki</option><option>Hyundai</option><option>Kia</option><option>BMW</option><option>Ford</option></select></label></div>
+          <div class="input-card"><span>🚗</span><label>Model<select name="model"><option value="">All Models</option><option>Corolla Altis X</option><option>Yaris</option><option>Fortuner</option><option>Corolla Cross</option><option>City</option><option>Civic</option><option>HR-V</option><option>Fronx</option><option>Alto</option><option>Every</option><option>Elantra</option><option>Sonata</option><option>Tucson</option><option>Sportage L</option><option>Stonic</option><option>Carnival</option><option>The New 1</option><option>M4 CS</option><option>Mustang</option><option>Explorer</option><option>F-150</option></select></label></div>
+          <div class="input-card"><span>💰</span><label>Max Price<select name="price"><option value="">Any Price</option><option value="3000000">Under 30 Lakh</option><option value="6000000">Under 60 Lakh</option><option value="9000000">Under 90 Lakh</option><option value="15000000">Under 1.5 Crore</option></select></label></div>
+          <div class="input-card"><span>📍</span><label>City<select name="city"><option value="">All Cities</option><option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Hyderabad</option></select></label></div>
+          <button class="btn btn-red search-btn" type="submit">Search Cars</button>
+        </form>
+      </div>
+    </section>
+<section class="section">
+      <div class="container">
+        
+        <div class="need-top-strip premium-need-strip" aria-label="AutoWorld premium category strip">
+          <div class="need-top-strip-fade left"></div>
+          <div class="need-top-strip-track">
+            <div class="need-top-strip-line">
+              <span><strong>Student Cars</strong> Budget friendly</span>
+              <span><strong>Family Cars</strong> Safe comfort</span>
+              <span><strong>Premium Cars</strong> Luxury drive</span>
+              <span><strong>City Cars</strong> Smart daily use</span>
+              <span><strong>Electric Cars</strong> Future ready</span>
+              <span><strong>Verified Dealers</strong> Trusted support</span>
+              <span><strong>Student Cars</strong> Budget friendly</span>
+              <span><strong>Family Cars</strong> Safe comfort</span>
+              <span><strong>Premium Cars</strong> Luxury drive</span>
+              <span><strong>City Cars</strong> Smart daily use</span>
+              <span><strong>Electric Cars</strong> Future ready</span>
+              <span><strong>Verified Dealers</strong> Trusted support</span>
+            </div>
+          </div>
+          <div class="need-top-strip-fade right"></div>
+        </div>
+
+        <div class="section-title"><h2>Choose by <span>Your Need</span></h2><p>Quick categories for different buyers.</p></div>
+        <div class="need-grid">
+          <article class="need-card enhanced-card click-card" data-open-card>
+            <div class="need-media">
+              <img class="need-thumb" src="assets/premium-need-car-modern.png" alt="Premium modern car">
+            </div>
+            <div class="need-head">
+              <span class="icon-round purple"><img src="assets/icon-student.svg" alt="Student"></span>
+              <h3>Student Cars</h3><div class="need-mini-strip" aria-label="Student Cars highlights"><div class="need-mini-track"><span>Budget friendly</span><span>Fuel saver</span><span>Easy maintenance</span><span>Campus ready</span><span>Budget friendly</span><span>Fuel saver</span><span>Easy maintenance</span><span>Campus ready</span></div></div>
+            </div>
+            <p class="need-short">Affordable, fuel efficient and easy to maintain.</p>
+            <div class="need-detail">
+              <p>Smart, affordable cars made for students who need low fuel cost, easy parking and daily reliability.</p>
+              <a href="see-your-car.html?type=student">View Student Cars →</a>
+            </div>
+          </article>
+
+          <article class="need-card enhanced-card click-card" data-open-card>
+            <div class="need-media">
+              <img class="need-thumb" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=700&q=85" alt="Family car">
+            </div>
+            <div class="need-head">
+              <span class="icon-round blue"><img src="assets/icon-family.svg" alt="Family"></span>
+              <h3>Family Cars</h3><div class="need-mini-strip" aria-label="Family Cars highlights"><div class="need-mini-track"><span>Safe cabin</span><span>Extra space</span><span>Long trips</span><span>Comfort ride</span><span>Safe cabin</span><span>Extra space</span><span>Long trips</span><span>Comfort ride</span></div></div>
+            </div>
+            <p class="need-short">Comfort, safety and space for daily family use.</p>
+            <div class="need-detail">
+              <p>Spacious cars with comfortable seats, safety features and smooth performance for family travel.</p>
+              <a href="see-your-car.html?type=family">View Family Cars →</a>
+            </div>
+          </article>
+
+          <article class="need-card enhanced-card click-card" data-open-card>
+            <div class="need-media">
+              <img class="need-thumb" src="https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?auto=format&fit=crop&w=700&q=85" alt="Premium car">
+            </div>
+            <div class="need-head">
+              <span class="icon-round red-soft"><img src="assets/icon-diamond.svg" alt="Premium"></span>
+              <h3>Premium Cars</h3><div class="need-mini-strip" aria-label="Premium Cars highlights"><div class="need-mini-track"><span>Luxury interior</span><span>Executive style</span><span>Smooth power</span><span>Premium comfort</span><span>Luxury interior</span><span>Executive style</span><span>Smooth power</span><span>Premium comfort</span></div></div>
+            </div>
+            <p class="need-short">Luxury, performance and strong road presence.</p>
+            <div class="need-detail">
+              <p>High-end cars with elegant design, advanced features and a refined driving experience.</p>
+              <a href="see-your-car.html?type=premium">View Premium Cars →</a>
+            </div>
+          </article>
+
+          <article class="need-card enhanced-card click-card" data-open-card>
+            <div class="need-media">
+              <img class="need-thumb" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=700&q=85" alt="City car">
+            </div>
+            <div class="need-head">
+              <span class="icon-round green"><img src="assets/icon-city.svg" alt="City"></span>
+              <h3>City Cars</h3><div class="need-mini-strip" aria-label="City Cars highlights"><div class="need-mini-track"><span>Compact size</span><span>Easy parking</span><span>Traffic friendly</span><span>Daily mileage</span><span>Compact size</span><span>Easy parking</span><span>Traffic friendly</span><span>Daily mileage</span></div></div>
+            </div>
+            <p class="need-short">Compact, practical and easy to park.</p>
+            <div class="need-detail">
+              <p>Compact cars designed for busy city roads, quick turns, easy parking and everyday travel.</p>
+              <a href="see-your-car.html?type=city">View City Cars →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        
+        <div class="featured-premium-panel enhanced-card">
+          <div class="featured-premium-copy">
+            <span class="premium-label">AutoWorld Featured Selection</span>
+            <h2>Curated Cars for Smart Buyers</h2>
+            <p>Explore hand-picked vehicles with clean details, strong road presence, finance support and easy booking guidance.</p>
+          </div>
+          <div class="featured-premium-stats">
+            <div><strong>Verified</strong><small>car listings</small></div>
+            <div><strong>Compare</strong><small>before buying</small></div>
+            <div><strong>Book</strong><small>test drive</small></div>
+          </div>
+        </div>
+
+        <div class="section-title split"><div><h2>Featured <span>Cars</span></h2><p>Real car pictures with clean details.</p></div><a href="see-your-car.html">View All Cars →</a></div>
+        <div class="home-feature-layout">
+          <div class="car-grid" data-featured-cars></div>
+          <aside class="dealer-widget enhanced-card">
+            <span class="pin">📍</span>
+            <h3>Find Dealers Near You</h3>
+            <p>Select your brand and city to find verified AutoWorld dealer information.</p>
+            <form data-dealer-form>
+              <select name="dealerBrand" required><option value="">Select Brand</option><option>Toyota</option><option>Honda</option><option>Suzuki</option><option>Hyundai</option><option>Kia</option><option>BMW</option><option>Ford</option></select>
+              <select name="dealerCity" required><option value="">Select City</option><option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Hyderabad</option></select>
+              <button class="btn btn-red" type="submit">Find Dealer →</button>
+              <div class="result-box" data-dealer-result></div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+<section class="section turntable-section">
+      <div class="container turntable-card enhanced-card">
+        <div class="turntable-copy">
+          <span class="eyebrow">360 Showroom View</span>
+          <h2>See the Car From Every Angle</h2>
+          <p>This section gives a simple rotating showroom feel. The car keeps moving inside the section, so the website looks more interactive without becoming complex.</p>
+          <div class="turntable-points">
+            <span>Real car preview</span>
+            <span>Clean motion effect</span>
+            <span>Premium showroom style</span>
+          </div>
+          <a class="btn btn-red" href="see-your-car.html">See More Cars →</a>
+        </div>
+        <div class="turntable-stage" aria-label="Rotating car showcase">
+          <div class="stage-ring"></div>
+          <div class="stage-light"></div>
+          <img class="turntable-car" src="assets/premium-360-car-only.png" alt="Rotating showroom car">
+          <div class="stage-shadow"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section compact-tools">
+      <div class="container tool-grid">
+        <a class="tool-card enhanced-card" href="compare.html"><span class="tool-icon">⚖</span><h3>Compare Cars</h3><p>Compare price, engine, mileage and best use in a clean table.</p><ul><li>Side-by-side models</li><li>Simple specifications</li><li>Better decision making</li></ul></a>
+        <a class="tool-card enhanced-card" href="finance.html"><span class="tool-icon">🏦</span><h3>Finance Support</h3><p>Check loan support, monthly plans and partner bank options.</p><ul><li>Up to 60% loan</li><li>Easy installment calculator</li><li>Partner bank details</li></ul></a>
+        <a class="tool-card enhanced-card" href="dealers.html"><span class="tool-icon">📍</span><h3>Dealer Locator</h3><p>Find verified dealers by brand and city without extra searching.</p><ul><li>Brand-wise dealers</li><li>Contact details</li><li>City based location</li></ul></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><h2>Why Choose <span>AutoWorld?</span></h2></div>
+        <div class="why-grid enhanced-card">
+          <div><span>🛡</span><strong>Verified Dealers</strong><small>Trusted dealer network</small></div>
+          <div><span>🏷</span><strong>Best Prices</strong><small>Market friendly deals</small></div>
+          <div><span>🚘</span><strong>Wide Range</strong><small>Cars for every need</small></div>
+          <div><span>📅</span><strong>Easy Booking</strong><small>Simple test drive form</small></div>
+          <div><span>🏦</span><strong>Finance Help</strong><small>Partner bank support</small></div>
+          <div><span>🎧</span><strong>Customer Support</strong><small>Guidance when needed</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-title"><h2>What Our <span>Customers Say</span></h2></div>
+        <div class="review-grid">
+          <article class="review-card enhanced-card"><div class="review-head"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Customer"><div><strong>Ahmed Khan</strong><small>Karachi</small></div></div><p>AutoWorld helped me compare different cars and choose a good option for my family.</p><span>★★★★★</span></article>
+          <article class="review-card enhanced-card"><div class="review-head"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Customer"><div><strong>Ali Raza</strong><small>Hyderabad</small></div></div><p>The finance support was clear and easy to understand. The process felt simple.</p><span>★★★★★</span></article>
+          <article class="review-card enhanced-card"><div class="review-head"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Customer"><div><strong>Hina Fatima</strong><small>Lahore</small></div></div><p>I found dealer details quickly and booked my test drive without confusion.</p><span>★★★★★</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-wrap">
+      <div class="container cta enhanced-card">
+        <div><h2>Ready to Find Your Perfect Car?</h2><p>Explore cars, compare models, check finance options and book a test drive today.</p></div>
+        <div class="hero-buttons"><a class="btn btn-red" href="see-your-car.html">Explore Cars →</a><a class="btn btn-white" href="book-me.html">Book Me 📅</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer premium-footer clean-premium-footer">
+    <div class="container footer-grid clean-footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-text">
+          <span class="brand-mark"><img src="assets/logo.png" alt="AutoWorld logo"></span>
+          <span class="brand-copy"><strong><span>Auto</span><em>World</em></strong><small>DRIVE THE FUTURE</small></span>
+        </div>
+        <p>AutoWorld is your trusted car dealership gateway for exploring cars, comparing models, locating dealers, checking warranty support, reviewing finance schemes and booking test drives.</p>
+        <div class="socials" aria-label="Follow AutoWorld">
+          <a class="social-link" href="https://www.facebook.com/autoworld" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"></a>
+          <a class="social-link" href="https://www.instagram.com/autoworld" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+          <a class="social-link" href="https://www.youtube.com/@autoworld" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="assets/icon-youtube.svg" alt="YouTube"></a>
+          <a class="social-link" href="https://www.linkedin.com/company/autoworld" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"></a>
+          <a class="social-link whatsapp" href="https://wa.me/922112345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="assets/icon-whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+      </div>
+
+      <div class="footer-col"><h4>Explore</h4><a href="index.html">Home</a><a href="see-your-car.html">See Your Car</a><a href="dealers.html">Dealers</a><a href="compare.html">Compare</a><a href="finance.html">Finance</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="warranty.html">Warranty Schemes</a><a href="finance-details.html">Finance Details</a><a href="contact.html">Contact Company</a><a href="about.html">About Us</a><a href="book-me.html">Book Me</a></div>
+      <div class="footer-col footer-contact"><h4>Contact</h4><p>📍 101, Business Bay, Karachi</p><p>☎ <a href="tel:+922112345678">+92 21 1234 5678</a></p><p>✉ <a href="mailto:info@autoworld.com">info@autoworld.com</a></p><p>🕘 Mon - Sat: 9:00 AM - 8:00 PM</p></div>
+      <div class="footer-col"><h4>Newsletter</h4><p>Get latest car updates, dealer alerts, warranty support and finance scheme news.</p><form data-save-form class="newsletter"><input type="email" placeholder="Enter your email" required><button class="btn btn-red">Subscribe</button><div class="notice"></div></form></div>
+    </div>
+
+    <div class="container premium-footer-bottom">
+      <p>© 2026 AutoWorld. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="contact.html">Contact</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="finance-details.html">Finance Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="carModal"><div class="modal-card"><button class="close-modal">×</button><div class="modal-body" data-modal-body></div></div></div>
+  <a class="back-top" href="#top">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>
